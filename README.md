@@ -13,7 +13,9 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+![image](https://user-images.githubusercontent.com/11340240/185205743-81e7b7ba-10b4-4a38-8d09-33087d3dff04.png)
+
+[Live Demo Link](https://bespoke-daifuku-00c69f.netlify.app/)
 
 
 ## Getting Started
@@ -42,8 +44,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/zied2112)
-- Twitter: [@twitterhandle](https://twitter.com/AmorZied1996)
+- GitHub: [@github](https://github.com/zied2112)
+- Twitter: [@twitter](https://twitter.com/AmorZied1996)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/zied-ben-amor-924908149/)
 
 
