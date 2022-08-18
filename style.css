@@ -7,14 +7,13 @@
   padding: 0;
   scroll-behavior: smooth;
   overflow: hidden;
-  font-family: roboto, Arial, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'roboto', Arial, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* navbar Style */
 header {
   align-items: center;
   height: 10vh;
-  background-color: black;
   display: flex;
   justify-content: space-between;
   padding-left: 10%;
@@ -22,116 +21,70 @@ header {
   opacity: 0.9;
 }
 
-.logo-link {
+.welcome-link {
   text-decoration: none;
-}
-
-.logo-text {
-  background-color: white;
-  padding-left: 10px;
-  text-align: center;
-
-  /* font-family: 'Roboto'; */
-  letter-spacing: 10px;
+  font-weight: 800;
   color: black;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-img {
-  background-color: white;
-  border-radius: 5px;
 }
 
 /* Welcome Section Style */
-.section1 {
-  display: flex;
-  background-image: url("/images/background-ppt-white-shades.jpg");
-  background-repeat: no-repeat;
-  backdrop-filter: blur(50px);
-
-  /* height: 100vh; */
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-  background-size: cover;
+.welcome-section {
+  background-image: url("/images/header-illsutration-mobile.png");
+  height: 90vh;
 }
 
 .container {
-  position: relative;
-  top: 30px;
-}
-
-.blur-background {
-  margin: auto;
-  background-color: rgba(128, 128, 128, 0.4);
-  backdrop-filter: blur(5px);
-  padding: 20px;
-  height: 80vh;
-  width: 80%;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  width: 90%;
+  margin: auto;
 }
 
-h1 {
+.welcome-section > .container > h1 {
+  margin-top: 15%;
+  font-size: 2.5rem;
   text-align: center;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #172b4d;
 }
 
-.name-span {
-  font-size: 3rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
-  background: rgb(238, 174, 202);
-  background:
-    radial-gradient(
-      circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
-    );
+.welcome-section > .container > h2 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #32b37e;
+}
+
+.welcome-section > .container > p {
+  line-height: 1.6;
+  width: 80%;
+  font-size: 1.1rem;
+  height: 30%;
+  text-justify: inter-word;
+  margin-top: 20px;
+  text-align: center;
+  color: #172b4d;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-link {
+  margin-top: 5vh;
+  width: 50%;
 }
 
 i {
-  font-size: 2rem;
-  color: black;
-}
-
-i:hover {
-  color: blue;
-}
-
-#header-description {
-  text-align-last: justify;
-  padding: 5%;
-  font-size: 1.3rem;
-}
-
-.link-connect {
-  color: black;
   font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.social-icon {
-  margin-top: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.social-icon > ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+  color: #505f79;
 }
