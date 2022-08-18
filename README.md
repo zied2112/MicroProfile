@@ -19,26 +19,21 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy, follow these simple steps.
 
 
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+Web browser installed
 
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Cloning a repository
+* on Github.com, navigate to the main page of the repository;
+* Above the list of files, click "Code" button; 
+* Copy the URL to clone the repository.
+* Open Terminal;
+* Change the current working directory to the location where you want the cloned directory; 
+* Type git clone, and then paste the URL you copied earlier; 
 
 ## Authors
 
