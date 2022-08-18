@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* General page style */
 * {
@@ -11,7 +11,7 @@
 }
 
 /* navbar Style */
-.navbar {
+header {
   align-items: center;
   height: 10vh;
   background-color: black;
@@ -20,6 +20,10 @@
   padding-left: 10%;
   padding-right: 10%;
   opacity: 0.9;
+}
+
+.logo-link {
+  text-decoration: none;
 }
 
 .logo-text {
@@ -35,10 +39,14 @@
   text-transform: uppercase;
 }
 
+img {
+  background-color: white;
+  border-radius: 5px;
+}
+
 /* Welcome Section Style */
-main {
+.section1 {
   display: flex;
-  align-items: center;
   background-image: url("/images/background-ppt-white-shades.jpg");
   background-repeat: no-repeat;
   backdrop-filter: blur(50px);
@@ -51,7 +59,7 @@ main {
 
 .container {
   position: relative;
-  top: -30px;
+  top: 30px;
 }
 
 .blur-background {
@@ -65,15 +73,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+h1 {
+  text-align: center;
 }
 
 .name-span {
+  font-size: 3rem;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
   background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  background:
+    radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
 }
 
 i {
@@ -81,10 +98,14 @@ i {
   color: black;
 }
 
+i:hover {
+  color: blue;
+}
+
 #header-description {
   text-align-last: justify;
   padding: 5%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .link-connect {
@@ -94,13 +115,21 @@ i {
   text-decoration: none;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .social-icon {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.social-icon > ul {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

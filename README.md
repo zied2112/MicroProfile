@@ -22,28 +22,25 @@
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
-To get a local copy up and running follow these simple example steps.
-
+Clone the repository to your machine
 ### Prerequisites
-
-### Setup
+Node JS
 
 ### Install
 
-### Usage
+#### Webhint
+npm install --save-dev hint@7.x
 
-### Run tests
-
-### Deployment
-
+#### Stylelint
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 
 
 ## Authors
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/zied2112)
-- Twitter: [@twitterhandle](https://twitter.com/AmorZied1996)
+- GitHub: [@github](https://github.com/zied2112)
+- Twitter: [@twitter](https://twitter.com/AmorZied1996)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/zied-ben-amor-924908149/)
 
 
