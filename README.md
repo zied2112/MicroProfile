@@ -17,23 +17,21 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy, follow these simple steps.
 
 
-Clone the repository to your machine
+
 ### Prerequisites
-Node JS
+Web browser installed
 
-### Install
-
-#### Webhint
-npm install --save-dev hint@7.x
-
-#### Stylelint
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-
+### Setup
+Cloning a repository
+* on Github.com, navigate to the main page of the repository;
+* Above the list of files, click "Code" button; 
+* Copy the URL to clone the repository.
+* Open Terminal;
+* Change the current working directory to the location where you want the cloned directory; 
+* Type git clone, and then paste the URL you copied earlier; 
 
 ## Authors
 

@@ -20,14 +20,17 @@ header {
   padding-right: 10%;
   opacity: 0.9;
 }
-
+.hamburger-menu{
+  color: black;
+  font-size: 1.2rem;
+}
+/* Welcome Section Style */
 .welcome-link {
   text-decoration: none;
   font-weight: 800;
   color: black;
 }
 
-/* Welcome Section Style */
 .welcome-section {
   background-image: url("/images/header-illsutration-mobile.png");
   height: 90vh;
@@ -84,7 +87,7 @@ ul {
   width: 50%;
 }
 
-i {
+li > a  {
   font-size: 1.5rem;
   color: #505f79;
 }
