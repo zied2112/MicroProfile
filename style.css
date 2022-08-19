@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  overflow: visible;
   font-family: "roboto", Arial, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -38,7 +38,9 @@ header {
 
 .welcome-section {
   background-image: url("/images/header-illsutration-mobile.png");
-  height: 90vh;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -51,7 +53,7 @@ header {
 }
 
 .welcome-section > .container > h1 {
-  margin-top: 15%;
+  margin-top: 18%;
   font-size: 2.5rem;
   text-align: center;
   letter-spacing: 1px;
@@ -87,13 +89,19 @@ ul {
 }
 
 .social-link {
-  margin-top: 10vh;
+  margin-top: 7vh;
   width: 50%;
+}
+
+#meduim-logo {
+  width: 28px;
+  opacity: 0.7;
+  height: 28px;
 }
 
 li > a {
   font-size: 1.5rem;
-  color: #505f79;
+  color: #4d4d4d;
 }
 
 .bottom-arrow {
@@ -225,6 +233,9 @@ li > a {
 }
 
 .about-container {
+  background-image: url("/images/illustration.png"), url("/images/MaskGroup.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,25 +286,28 @@ li > a {
   margin: 15px 0 25px 0;
 }
 
+.btn:hover {
+  background-color: #36b37f;
+}
+
+.btn:enabled {
+  background-color: #36b37f;
+}
+
+.btn:active {
+  background-color: #008552;
+}
+
 .back-img1 {
   background-image: url("images/Mask Group.png");
   border: none;
   position: absolute;
   width: 100%;
-  top: 389vh;
+  top: 376vh;
   left: 82vw;
-
-  /* margin-bottom: -235vh; */
-  z-index: -1;
 }
 
-.back-img2 {
-  position: absolute;
-  width: 100%;
-  top: 389vh;
 
-  /* margin-bottom: -252vh; */
-}
 
 .about-skills {
   display: grid;
@@ -313,7 +327,7 @@ li > a {
 
 .skills > .icon {
   overflow: hidden;
-  width: 100%;
+  width: 95%;
   height: 150px;
   border-radius: 5px;
   background-size: auto;
