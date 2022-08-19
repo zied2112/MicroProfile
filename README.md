@@ -62,6 +62,10 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
+<<<<<<< Updated upstream
 This project is [MIT](./LICENSE) licensed.
 
 
+=======
+This project is [MIT](./LICENSE) licensed.
+>>>>>>> Stashed changes
