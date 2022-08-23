@@ -29,6 +29,28 @@ header {
   font-size: 1.2rem;
 }
 
+form > .btn {
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #32b37e;
+  color: white;
+  border: none;
+
+  /* width: 40%; */
+  margin: 1rem auto;
+}
+
+.container-contact > h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 52px;
+  color: #172b4d;
+}
+
 /* Welcome Section Style */
 .welcome-link {
   text-decoration: none;
@@ -375,14 +397,6 @@ li > a {
   justify-content: center;
 }
 
-.container-contact > h2 {
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 52px;
-  color: #172b4d;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -407,19 +421,6 @@ form > input[type="email"]:focus,
 form > textarea:focus {
   border: 1px solid #36b37e;
   outline: none;
-}
-
-form > .btn {
-  border-radius: 5px;
-  font-size: 1.3rem;
-  text-align: center;
-  text-decoration: none;
-  padding: 15px;
-  background-color: #32b37e;
-  color: white;
-  border: none;
-  width: 35%;
-  margin: 1rem auto;
 }
 
 footer {
