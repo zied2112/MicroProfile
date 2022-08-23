@@ -93,7 +93,7 @@ ul {
   width: 50%;
 }
 
-#meduim-logo {
+.meduim-logo {
   width: 28px;
   opacity: 0.7;
   height: 28px;
@@ -233,7 +233,8 @@ li > a {
 }
 
 .about-container {
-  background-image: url("/images/illustration.png"),
+  background-image:
+    url("/images/illustration.png"),
     url("/images/MaskGroup.png");
   background-repeat: no-repeat;
   background-position: left top, right top;
@@ -361,16 +362,19 @@ li > a {
   color: #36b37e;
   border-radius: 5px;
 }
+
 .contact-section {
   height: 100vh;
   margin: 3rem 24px;
 }
+
 .container-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .container-contact > h2 {
   font-size: 40px;
   font-weight: 700;
@@ -378,12 +382,14 @@ li > a {
   line-height: 52px;
   color: #172b4d;
 }
+
 form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   width: 100%;
 }
+
 form > input[type="text"],
 form > input[type="email"],
 form > textarea {
@@ -395,12 +401,14 @@ form > textarea {
   font-size: 14px;
   color: #172b4d;
 }
+
 form > input[type="text"]:focus,
 form > input[type="email"]:focus,
 form > textarea:focus {
   border: 1px solid #36b37e;
   outline: none;
 }
+
 form > .btn {
   border-radius: 5px;
   font-size: 1.3rem;
@@ -412,4 +420,10 @@ form > .btn {
   border: none;
   width: 35%;
   margin: 1rem auto;
+}
+
+footer {
+  height: 200px;
+  margin-top: 15rem;
+  text-align: center;
 }
