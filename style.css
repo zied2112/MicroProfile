@@ -291,7 +291,6 @@ form > .btn {
   color: white;
   margin: 15px 0 25px 0;
 }
-
 .about-container {
   display: flex;
   flex-direction: column;
@@ -761,18 +760,15 @@ footer {
     /* margin: 1rem auto; */
     margin: 1rem auto 1rem 10px;
   }
-
   .contact-section > .social-link > ul > li {
     padding: 10px;
   }
-
   hr {
     display: block;
     color: #dfe1e6;
     width: 100%;
     opacity: 0.3;
   }
-
   footer {
     display: none;
   }
