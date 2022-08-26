@@ -198,7 +198,6 @@ form > .btn {
   position: relative;
   left: 10px;
   top: 5px;
-  content: "";
   display: inline-block;
 
   /* margin-top: 0.6em; */
@@ -518,6 +517,12 @@ footer {
   .navItems > li > a {
     color: #172b4d;
     font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .navItems li a:hover{
+    font-size: 1.2rem;
+    color: #36b37f;
   }
 
   .welcomeHeaderContainer {
@@ -572,6 +577,20 @@ footer {
   .social-link > ul > li > a {
     font-size: 1.2rem;
     color: #4d4d4d;
+    transition: all 0.3s;
+  }
+
+  .social-link ul li a:hover {
+    font-size: 1.5rem;
+    color: #36b37f;
+  }
+
+  .social-link > ul > li > a > img {
+    transition: all 0.3s;
+  }
+
+  .social-link > ul > li > a > img:hover {
+    transform: scale(1.2);
   }
 
   .meduim-logo {
@@ -599,6 +618,12 @@ footer {
     border: 0.08em solid #dfe1e6;
     border-radius: 50%;
     margin: auto;
+    transition: all 0.3s;
+  }
+
+  .bottom:hover {
+    background-color: #36b37f;
+    color: #fff;
   }
 
   .bottom::after {
@@ -618,6 +643,12 @@ footer {
     -moz-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
+    transition: all 0.3s;
+  }
+
+  .bottom:hover::after {
+    border-top: 0.1em solid #fff;
+    border-right: 0.1em solid #fff;
   }
 
   .projects-container {
