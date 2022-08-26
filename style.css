@@ -72,6 +72,20 @@ ul {
 .navItems {
   display: none;
 }
+@keyframes rotate{
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+
+.logo-welcome{
+  animation-name: rotate;
+  animation-duration: 2s;
+}
 
 .hamburger-menu {
   color: black;
@@ -416,6 +430,10 @@ form > .btn {
   background-color: white;
   color: #36b37e;
   border-radius: 5px;
+}
+.skills > ul > li:hover {
+  background-color: #c2c4c4;
+  cursor: pointer;
 }
 
 .contact-section {
