@@ -278,6 +278,13 @@ form > .btn {
   padding: 10px;
   background-color: #ebf0ee;
   border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.project-description ul > li:hover {
+  background-color: #c2c4c4;
+  color: #fff;
+  cursor: pointer;
 }
 
 .project-description > .btn {
@@ -289,6 +296,11 @@ form > .btn {
   background-color: #32b37e;
   color: white;
   margin: 15px 0 25px 0;
+  transition: all 0.3s;
+}
+
+.project-description > .btn:hover {
+  background-color: #008552;
 }
 
 .about-container {
@@ -302,8 +314,7 @@ form > .btn {
 }
 
 .about-description {
-  background-image:
-    url("/images/illustration.png"),
+  background-image: url("/images/illustration.png"),
     url("/images/MaskGroup.png");
   background-repeat: no-repeat;
   background-position: left top, right top;
@@ -350,7 +361,7 @@ form > .btn {
 }
 
 .btn:hover {
-  background-color: #36b37f;
+  background-color: #035231;
 }
 
 .btn:enabled {
@@ -453,7 +464,9 @@ form > textarea:focus {
 .name-form {
   display: none;
 }
-hr { display: none; }
+hr {
+  display: none;
+}
 
 footer {
   height: 200px;
@@ -520,7 +533,7 @@ footer {
     transition: all 0.3s;
   }
 
-  .navItems li a:hover{
+  .navItems li a:hover {
     font-size: 1.2rem;
     color: #36b37f;
   }
@@ -663,8 +676,7 @@ footer {
 
   .about-description {
     height: 50vh;
-    background-image:
-      url("/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
+    background-image: url("/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
       url("/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
     background-repeat: no-repeat;
     background-position: left calc(70%), right top;
@@ -709,8 +721,7 @@ footer {
   }
 
   .container-contact {
-    background-image:
-      url("/images/Microverse-Student-Project-1 -desktop/Frame.png"),
+    background-image: url("/images/Microverse-Student-Project-1 -desktop/Frame.png"),
       url("/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
       url("/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
     background-repeat: no-repeat;
@@ -791,6 +802,10 @@ footer {
   form > .btn {
     /* margin: 1rem auto; */
     margin: 1rem auto 1rem 10px;
+  }
+
+  form > .btn:hover {
+    background-color: #035231;
   }
 
   .contact-section > .social-link > ul > li {
