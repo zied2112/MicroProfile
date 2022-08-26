@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: visible;
   font-family: "roboto", Arial, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -21,7 +20,57 @@ header {
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
-  opacity: 0.9;
+
+  /* background-color: #fff; */
+
+  /* opacity: 0.9; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.skills > ul {
+  padding: 10px;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-section > .social-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-description > ul {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.navItems {
+  display: none;
 }
 
 .hamburger-menu {
@@ -43,7 +92,7 @@ form > .btn {
   margin: 1rem auto;
 }
 
-.container-contact > h2 {
+.container-contact > .container-contact2 > h2 {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
@@ -65,7 +114,7 @@ form > .btn {
   background-size: cover;
 }
 
-.container {
+.welcome-section > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +150,7 @@ form > .btn {
   color: #172b4d;
 }
 
-ul {
+.welcome-section > .container > .social-link > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -110,7 +159,7 @@ ul {
   justify-content: space-between;
 }
 
-.social-link {
+.welcome-section > .container > .social-link {
   margin-top: 7vh;
   width: 50%;
 }
@@ -121,40 +170,43 @@ ul {
   height: 28px;
 }
 
-li > a {
+.social-link > ul > li > a {
   font-size: 1.5rem;
   color: #4d4d4d;
 }
 
-.bottom-arrow {
+/* .bottom-arrow{
+  display: none;
+ } */
+.bottom-arrow1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  rotate: 135deg;
 }
 
-.bottom {
+.bottom1 {
   display: inline-block;
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   border: 0.08em solid #dfe1e6;
   border-radius: 50%;
   margin: auto;
 }
 
-.bottom::after {
+.bottom1::after {
   position: relative;
-  left: 22px;
-  top: 8px;
+  left: 10px;
+  top: 5px;
   content: "";
   display: inline-block;
-  margin-top: 0.6em;
-  width: 1em;
-  height: 0.9em;
-  border-top: 0.2em solid #333;
-  border-right: 0.2em solid #333;
-  border-radius: 3px;
-  -moz-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+
+  /* margin-top: 0.6em; */
+  width: 25%;
+  height: 25%;
+  border-top: 0.1em solid #333;
+  border-right: 0.1em solid #333;
+  border-radius: 1px;
 }
 
 .works-title {
@@ -211,23 +263,13 @@ li > a {
   align-items: center;
 }
 
-.project-description h3 {
+.project-description > h3 {
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 1px;
   font-weight: 900;
   color: #3a4a42;
   margin-top: 20px;
-}
-
-.project-description ul {
-  padding: 10px;
-  margin: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .project-description ul > li {
@@ -250,16 +292,7 @@ li > a {
   margin: 15px 0 25px 0;
 }
 
-.about-section {
-  display: block;
-}
-
 .about-container {
-  background-image:
-    url("/images/illustration.png"),
-    url("/images/MaskGroup.png");
-  background-repeat: no-repeat;
-  background-position: left top, right top;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,8 +303,14 @@ li > a {
 }
 
 .about-description {
+  background-image:
+    url("/images/illustration.png"),
+    url("/images/MaskGroup.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
   text-align: center;
-  width: 90%;
+  width: 100%;
+  height: 60vh;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -289,14 +328,15 @@ li > a {
 
 .about-text {
   /* height: 25vh; */
-  line-height: 32px;
-  font-size: 1.4rem;
+  line-height: 28px;
+  font-size: 1rem;
   text-align: center;
   font-weight: 500;
   color: #172b4d;
   margin-top: 20px;
   margin-bottom: 10px;
   border: none;
+  width: 76%;
 }
 
 .about-description > .btn {
@@ -322,24 +362,17 @@ li > a {
   background-color: #008552;
 }
 
-.back-img1 {
-  background-image: url("images/Mask Group.png");
-  border: none;
-  position: absolute;
-  width: 100%;
-  top: 376vh;
-  left: 82vw;
-}
+.about-skills-container {
+  display: inline-grid;
 
-.about-skills {
-  display: grid;
+  /* justify-items: center; */
+
   column-gap: 10px;
 }
 
 .skills {
   background-color: #ebf0ee;
-  height: 53vh;
-  width: 90vw;
+  width: 90%;
   margin: 2vh auto;
   border-radius: 8px;
   display: flex;
@@ -349,7 +382,7 @@ li > a {
 
 .skills > .icon {
   overflow: hidden;
-  width: 95%;
+  width: 100%;
   height: 150px;
   border-radius: 5px;
   background-size: auto;
@@ -365,17 +398,7 @@ li > a {
   margin-bottom: 3vh;
 }
 
-.skills ul {
-  padding: 10px;
-  margin: auto;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.skills ul > li {
+.skills > ul > li {
   font-size: 12px;
   font-weight: 600;
   margin: 5px 0;
@@ -388,6 +411,10 @@ li > a {
 .contact-section {
   height: 100vh;
   margin: 3rem 24px;
+}
+
+.contact-section > .social-link > ul > li {
+  padding: 10px;
 }
 
 .container-contact {
@@ -405,6 +432,7 @@ form {
 }
 
 form > input[type="text"],
+form > .name-form > input[type="text"],
 form > input[type="email"],
 form > textarea {
   width: 100%;
@@ -423,8 +451,329 @@ form > textarea:focus {
   outline: none;
 }
 
+.name-form {
+  display: none;
+}
+hr { display: none; }
+
 footer {
   height: 200px;
   margin-top: 15rem;
   text-align: center;
+}
+
+@media screen and (min-device-width: 768px) {
+  header {
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: white; */
+  }
+
+  .contact-section > .social-link {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo-welcome {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navItems {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 30vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .navItems > li {
+    margin: 0 10px;
+  }
+
+  .navItems > li > a {
+    color: #172b4d;
+    font-weight: 500;
+  }
+
+  .welcomeHeaderContainer {
+    /* height: 100vh; */
+    background-image: url("/images/Header-llustration-desktop.png");
+
+    /* position: absolute; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    background-position: center;
+  }
+
+  .welcome-section {
+    height: 120vh;
+    background: none;
+    margin-bottom: 10%;
+  }
+
+  br {
+    display: none;
+  }
+
+  .welcome-section > .container {
+    height: 100vh;
+    padding: 8vh 18.9vw 0 18.9vw;
+  }
+
+  .welcome-section > .container > h1 {
+    margin-top: 6%;
+    margin-bottom: 1%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+  }
+
+  .welcome-section > .container > h2 {
+    font-size: 3rem;
+  }
+
+  .welcome-section > .container > p {
+    text-justify: distribute-all-lines;
+    height: 15%;
+  }
+
+  .welcome-section > .container > .social-link {
+    margin-top: 3vh;
+    width: 22%;
+  }
+
+  .social-link > ul > li > a {
+    font-size: 1.2rem;
+    color: #4d4d4d;
+  }
+
+  .meduim-logo {
+    width: 20px;
+    height: 22px;
+  }
+
+  .bottom-arrow1 {
+    display: none;
+  }
+
+  .bottom-arrow {
+    /* display: visible; */
+    position: absolute;
+    top: 75vh;
+    left: 49%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border: 0.08em solid #dfe1e6;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .bottom::after {
+    position: relative;
+    left: 10.7px;
+    top: 2px;
+    text-align: center;
+    content: "";
+    display: inline-block;
+
+    /* margin-top: 0.6em; */
+    width: 25%;
+    height: 25%;
+    border-top: 0.1em solid #333;
+    border-right: 0.1em solid #333;
+    border-radius: 1px;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+  }
+
+  .about-container {
+    padding-bottom: 50vh 0;
+  }
+
+  .about-description {
+    height: 50vh;
+    background-image:
+      url("/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
+      url("/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
+    background-repeat: no-repeat;
+    background-position: left calc(70%), right top;
+  }
+
+  .about-text {
+    width: 52%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.5;
+    color: #42526e;
+  }
+
+  .about-skills-container {
+    /* display:grid ;  */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* width: 90%; */
+    margin: auto;
+    gap: 20px;
+    padding: 10vh;
+  }
+
+  .skills {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .skills > .icon {
+    width: 100%;
+    margin: 3vh;
+  }
+
+  .contact-section {
+    margin: 5vh 0 0 0;
+
+    /* width: 100vw; */
+    height: 87vh;
+    overflow-y: hidden;
+  }
+
+  .container-contact {
+    background-image:
+      url("/images/Microverse-Student-Project-1 -desktop/Frame.png"),
+      url("/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
+      url("/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right bottom, left center, calc(20%) calc(65%);
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .container-contact2 {
+    display: flex;
+    width: 100%;
+    padding: 0 165px;
+    margin: 0;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: center;
+  }
+
+  .container-contact > .container-contact2 > h2 {
+    /* border: #008552 solid 1px; */
+
+    /* padding: 5rem 4rem; */
+
+    /* padding: 6rem 3rem 0 3rem; */
+    padding: 3rem 2rem;
+
+    /* height: 30vh; */
+    font-size: 1.7rem;
+    text-align: justify;
+    justify-content: baseline;
+    width: 60%;
+    font-weight: 600;
+    color: #172b4d;
+  }
+
+  form {
+    /* width: 40vw; */
+
+    /* float: left; */
+    justify-content: start;
+
+    /* width: 40 */
+  }
+
+  .name-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101%;
+  }
+
+  #name {
+    display: none;
+  }
+
+  form > .name-form > input[type="text"],
+  form > input[type="email"],
+  form > textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin: 10px;
+    font-size: 14px;
+    color: #172b4d;
+  }
+
+  #lastName {
+    margin: 10px 0 10px 10px;
+    padding: 15px 25px 15px 15px;
+
+    /* width: 150%; */
+  }
+
+  form > .btn {
+    /* margin: 1rem auto; */
+    margin: 1rem auto 1rem 10px;
+  }
+
+  .contact-section > .social-link > ul > li {
+    padding: 10px;
+  }
+
+  hr {
+    display: block;
+    color: #dfe1e6;
+    width: 100%;
+    opacity: 0.3;
+  }
+
+  footer {
+    display: none;
+  }
 }
