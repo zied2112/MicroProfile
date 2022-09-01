@@ -13,10 +13,10 @@
 
 ## Live Demo (if available)
 
-![image](https://user-images.githubusercontent.com/11340240/185205743-81e7b7ba-10b4-4a38-8d09-33087d3dff04.png)
 
 [Live Demo Link](https://bespoke-daifuku-00c69f.netlify.app/)
-
+![image](https://user-images.githubusercontent.com/11340240/186735119-f85b3c25-ad53-4456-9b4c-45a36e92e3f9.png)
+![image](https://user-images.githubusercontent.com/11340240/186735278-750414df-1551-4c98-8ee1-1d6b0df03f43.png)
 
 ## Getting Started
 To get a local copy, follow these simple steps.
