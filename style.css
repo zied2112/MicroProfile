@@ -122,7 +122,7 @@ form > .btn {
 }
 
 .welcome-section {
-  background-image: url("/images/header-illsutration-mobile.png");
+  background-image: url("../MicroProfile/images/header-illsutration-mobile.png");
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -328,8 +328,10 @@ form > .btn {
 }
 
 .about-description {
-  background-image: url("/images/illustration.png"),
-    url("/images/MaskGroup.png");
+  background-image:
+    url("../MicroProfile/images/illustration.png"),
+    url("../MicroProfile/images/MaskGroup.png");
+
   background-repeat: no-repeat;
   background-position: left top, right top;
   text-align: center;
@@ -558,7 +560,7 @@ footer {
 
   .welcomeHeaderContainer {
     /* height: 100vh; */
-    background-image: url("/images/Header-llustration-desktop.png");
+    background-image: url("../MicroProfile/images/Header-llustration-desktop.png");
 
     /* position: absolute; */
     background-size: cover;
@@ -694,8 +696,10 @@ footer {
 
   .about-description {
     height: 50vh;
-    background-image: url("/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
-      url("/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
+
+    background-image:
+      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
+      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
     background-repeat: no-repeat;
     background-position: left calc(70%), right top;
   }
@@ -739,9 +743,12 @@ footer {
   }
 
   .container-contact {
-    background-image: url("/images/Microverse-Student-Project-1 -desktop/Frame.png"),
-      url("/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
-      url("/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
+
+    background-image:
+      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
+      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
+      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
+
     background-repeat: no-repeat;
     background-position: right bottom, left center, calc(20%) calc(65%);
     height: 80vh;
