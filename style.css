@@ -72,6 +72,20 @@ ul {
 .navItems {
   display: none;
 }
+@keyframes rotate{
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+
+.logo-welcome{
+  animation-name: rotate;
+  animation-duration: 2s;
+}
 
 .hamburger-menu {
   color: black;
@@ -198,7 +212,6 @@ form > .btn {
   position: relative;
   left: 10px;
   top: 5px;
-  content: "";
   display: inline-block;
 
   /* margin-top: 0.6em; */
@@ -279,6 +292,13 @@ form > .btn {
   padding: 10px;
   background-color: #ebf0ee;
   border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.project-description ul > li:hover {
+  background-color: #c2c4c4;
+  color: #fff;
+  cursor: pointer;
 }
 
 .project-description > .btn {
@@ -290,6 +310,11 @@ form > .btn {
   background-color: #32b37e;
   color: white;
   margin: 15px 0 25px 0;
+  transition: all 0.3s;
+}
+
+.project-description > .btn:hover {
+  background-color: #008552;
 }
 
 .about-container {
@@ -306,6 +331,7 @@ form > .btn {
   background-image:
     url("../MicroProfile/images/illustration.png"),
     url("../MicroProfile/images/MaskGroup.png");
+
   background-repeat: no-repeat;
   background-position: left top, right top;
   text-align: center;
@@ -351,7 +377,7 @@ form > .btn {
 }
 
 .btn:hover {
-  background-color: #36b37f;
+  background-color: #035231;
 }
 
 .btn:enabled {
@@ -407,6 +433,10 @@ form > .btn {
   color: #36b37e;
   border-radius: 5px;
 }
+.skills > ul > li:hover {
+  background-color: #c2c4c4;
+  cursor: pointer;
+}
 
 .contact-section {
   height: 100vh;
@@ -454,7 +484,9 @@ form > textarea:focus {
 .name-form {
   display: none;
 }
-hr { display: none; }
+hr {
+  display: none;
+}
 
 footer {
   height: 200px;
@@ -518,6 +550,12 @@ footer {
   .navItems > li > a {
     color: #172b4d;
     font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .navItems li a:hover {
+    font-size: 1.2rem;
+    color: #36b37f;
   }
 
   .welcomeHeaderContainer {
@@ -572,6 +610,20 @@ footer {
   .social-link > ul > li > a {
     font-size: 1.2rem;
     color: #4d4d4d;
+    transition: all 0.3s;
+  }
+
+  .social-link ul li a:hover {
+    font-size: 1.5rem;
+    color: #36b37f;
+  }
+
+  .social-link > ul > li > a > img {
+    transition: all 0.3s;
+  }
+
+  .social-link > ul > li > a > img:hover {
+    transform: scale(1.2);
   }
 
   .meduim-logo {
@@ -599,6 +651,12 @@ footer {
     border: 0.08em solid #dfe1e6;
     border-radius: 50%;
     margin: auto;
+    transition: all 0.3s;
+  }
+
+  .bottom:hover {
+    background-color: #36b37f;
+    color: #fff;
   }
 
   .bottom::after {
@@ -618,6 +676,12 @@ footer {
     -moz-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
+    transition: all 0.3s;
+  }
+
+  .bottom:hover::after {
+    border-top: 0.1em solid #fff;
+    border-right: 0.1em solid #fff;
   }
 
   .projects-container {
@@ -632,6 +696,7 @@ footer {
 
   .about-description {
     height: 50vh;
+
     background-image:
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
@@ -678,10 +743,12 @@ footer {
   }
 
   .container-contact {
+
     background-image:
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
+
     background-repeat: no-repeat;
     background-position: right bottom, left center, calc(20%) calc(65%);
     height: 80vh;
@@ -760,6 +827,10 @@ footer {
   form > .btn {
     /* margin: 1rem auto; */
     margin: 1rem auto 1rem 10px;
+  }
+
+  form > .btn:hover {
+    background-color: #035231;
   }
 
   .contact-section > .social-link > ul > li {
