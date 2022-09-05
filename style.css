@@ -78,6 +78,7 @@ ul {
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -124,7 +125,6 @@ form > .btn {
 
 .welcome-section {
   background-image: url("../MicroProfile/images/header-illsutration-mobile.png");
-
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,6 +223,7 @@ form > .btn {
   border-right: 0.1em solid #333;
   border-radius: 1px;
 }
+
 .works-title {
   font-size: 2.5rem;
   text-align: center;
@@ -296,6 +297,16 @@ form > .btn {
   transition: all 0.3s;
 }
 
+.skills > ul > li {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: white;
+  color: #36b37e;
+  border-radius: 5px;
+}
+
 .project-description ul > li:hover {
   background-color: #c2c4c4;
   color: #fff;
@@ -314,6 +325,29 @@ form > .btn {
   transition: all 0.3s;
 }
 
+.about-description > .btn {
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #32b37e;
+  color: white;
+  margin: 15px 0 25px 0;
+}
+
+.btn:hover {
+  background-color: #035231;
+}
+
+.btn:enabled {
+  background-color: #36b37f;
+}
+
+.btn:active {
+  background-color: #008552;
+}
+
 .project-description > .btn:hover {
   background-color: #008552;
 }
@@ -329,14 +363,13 @@ form > .btn {
 }
 
 .about-description {
-  background-image: url("/images/illustration.png"),
+  background-image:
+    url("/images/illustration.png"),
     url("/images/MaskGroup.png");
-
-  background-image: url("../MicroProfile/images/illustration.png"),
+  background-image:
+    url("../MicroProfile/images/illustration.png"),
     url("../MicroProfile/images/MaskGroup.png");
-
   background-repeat: no-repeat;
-
   background-position: left top, right top;
   text-align: center;
   width: 100%;
@@ -367,29 +400,6 @@ form > .btn {
   margin-bottom: 10px;
   border: none;
   width: 76%;
-}
-
-.about-description > .btn {
-  border-radius: 5px;
-  font-size: 1.3rem;
-  text-align: center;
-  text-decoration: none;
-  padding: 15px;
-  background-color: #32b37e;
-  color: white;
-  margin: 15px 0 25px 0;
-}
-
-.btn:hover {
-  background-color: #035231;
-}
-
-.btn:enabled {
-  background-color: #36b37f;
-}
-
-.btn:active {
-  background-color: #008552;
 }
 
 .about-skills-container {
@@ -428,20 +438,11 @@ form > .btn {
   margin-bottom: 3vh;
 }
 
-.skills > ul > li {
-  font-size: 12px;
-  font-weight: 600;
-  margin: 5px 0;
-  padding: 10px;
-  background-color: white;
-  color: #36b37e;
-  border-radius: 5px;
-}
-
 .skills > ul > li:hover {
   background-color: #c2c4c4;
   cursor: pointer;
 }
+
 .contact-section {
   height: 100vh;
   margin: 3rem 24px;
@@ -558,6 +559,12 @@ footer {
     transition: all 0.3s;
   }
 
+  .social-link > ul > li > a {
+    font-size: 1.2rem;
+    color: #4d4d4d;
+    transition: all 0.3s;
+  }
+
   .navItems li a:hover {
     font-size: 1.2rem;
     color: #36b37f;
@@ -613,11 +620,7 @@ footer {
     width: 22%;
   }
 
-  .social-link > ul > li > a {
-    font-size: 1.2rem;
-    color: #4d4d4d;
-    transition: all 0.3s;
-  }
+
 
   .social-link ul li a:hover {
     font-size: 1.5rem;
@@ -657,7 +660,6 @@ footer {
     border: 0.08em solid #dfe1e6;
     border-radius: 50%;
     margin: auto;
-
     transition: all 0.3s;
   }
 
@@ -703,10 +705,9 @@ footer {
 
   .about-description {
     height: 50vh;
-
-    background-image: url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
+    background-image:
+      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
-
     background-repeat: no-repeat;
     background-position: left calc(70%), right top;
   }
@@ -750,10 +751,10 @@ footer {
   }
 
   .container-contact {
-    background-image: url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
+    background-image:
+      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
-
     background-repeat: no-repeat;
     background-position: right bottom, left center, calc(20%) calc(65%);
     height: 80vh;
