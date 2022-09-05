@@ -13,37 +13,34 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
 
+[Live Demo Link](https://bespoke-daifuku-00c69f.netlify.app/)
+![image](https://user-images.githubusercontent.com/11340240/186735119-f85b3c25-ad53-4456-9b4c-45a36e92e3f9.png)
+![image](https://user-images.githubusercontent.com/11340240/186735278-750414df-1551-4c98-8ee1-1d6b0df03f43.png)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy, follow these simple steps.
 
 
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+Web browser installed
 
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Cloning a repository
+* on Github.com, navigate to the main page of the repository;
+* Above the list of files, click "Code" button; 
+* Copy the URL to clone the repository.
+* Open Terminal;
+* Change the current working directory to the location where you want the cloned directory; 
+* Type git clone, and then paste the URL you copied earlier; 
 
 ## Authors
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/zied2112)
-- Twitter: [@twitterhandle](https://twitter.com/AmorZied1996)
+- GitHub: [@github](https://github.com/zied2112)
+- Twitter: [@twitter](https://twitter.com/AmorZied1996)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/zied-ben-amor-924908149/)
 
 
@@ -65,6 +62,10 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
+<<<<<<< Updated upstream
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+=======
+This project is [MIT](./LICENSE) licensed.
+>>>>>>> Stashed changes
