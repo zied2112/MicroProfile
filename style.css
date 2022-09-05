@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: "roboto", Arial, Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -72,8 +73,8 @@ ul {
 .navItems {
   display: none;
 }
-<<<<<<< HEAD
-@keyframes rotate{
+
+@keyframes rotate {
   0% {
     transform: rotate(0);
   }
@@ -81,14 +82,11 @@ ul {
     transform: rotate(360deg);
   }
 }
-  
 
-.logo-welcome{
+.logo-welcome {
   animation-name: rotate;
   animation-duration: 2s;
 }
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
 
 .hamburger-menu {
   color: black;
@@ -125,14 +123,9 @@ form > .btn {
 }
 
 .welcome-section {
-<<<<<<< HEAD
-  background-image: url("/images/header-illsutration-mobile.png");
-=======
   background-image: url("../MicroProfile/images/header-illsutration-mobile.png");
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
-  background-image: url("../MicroProfile/images/header-illsutration-mobile.png");
-  
-height: 80vh;
+
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -200,8 +193,7 @@ height: 80vh;
 
 /* .bottom-arrow{
   display: none;
- } */
-.bottom-arrow1 {
+ } */.bottom-arrow1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,10 +213,7 @@ height: 80vh;
   position: relative;
   left: 10px;
   top: 5px;
-<<<<<<< HEAD
-=======
   content: "";
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
   display: inline-block;
 
   /* margin-top: 0.6em; */
@@ -234,7 +223,6 @@ height: 80vh;
   border-right: 0.1em solid #333;
   border-radius: 1px;
 }
-
 .works-title {
   font-size: 2.5rem;
   text-align: center;
@@ -305,7 +293,6 @@ height: 80vh;
   padding: 10px;
   background-color: #ebf0ee;
   border-radius: 5px;
-<<<<<<< HEAD
   transition: all 0.3s;
 }
 
@@ -313,8 +300,6 @@ height: 80vh;
   background-color: #c2c4c4;
   color: #fff;
   cursor: pointer;
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
 }
 
 .project-description > .btn {
@@ -326,14 +311,11 @@ height: 80vh;
   background-color: #32b37e;
   color: white;
   margin: 15px 0 25px 0;
-<<<<<<< HEAD
   transition: all 0.3s;
 }
 
 .project-description > .btn:hover {
   background-color: #008552;
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
 }
 
 .about-container {
@@ -347,18 +329,14 @@ height: 80vh;
 }
 
 .about-description {
-<<<<<<< HEAD
   background-image: url("/images/illustration.png"),
     url("/images/MaskGroup.png");
-=======
-  background-image:
-    url("../MicroProfile/images/illustration.png"),
-    url("../MicroProfile/images/MaskGroup.png");
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
 
-    url("../MicroProfile/images/illustration.png"),
-    url("../MicroProfile/images/MaskGroup.png");  
-background-repeat: no-repeat;
+  background-image: url("../MicroProfile/images/illustration.png"),
+    url("../MicroProfile/images/MaskGroup.png");
+
+  background-repeat: no-repeat;
+
   background-position: left top, right top;
   text-align: center;
   width: 100%;
@@ -403,12 +381,7 @@ background-repeat: no-repeat;
 }
 
 .btn:hover {
-  background-color: #36b37f;
-<<<<<<< HEAD
   background-color: #035231;
-=======
-  background-color: #36b37f;
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
 }
 
 .btn:enabled {
@@ -464,14 +437,11 @@ background-repeat: no-repeat;
   color: #36b37e;
   border-radius: 5px;
 }
-<<<<<<< HEAD
+
 .skills > ul > li:hover {
   background-color: #c2c4c4;
   cursor: pointer;
 }
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
-
 .contact-section {
   height: 100vh;
   margin: 3rem 24px;
@@ -518,13 +488,10 @@ form > textarea:focus {
 .name-form {
   display: none;
 }
-<<<<<<< HEAD
+
 hr {
   display: none;
 }
-=======
-hr { display: none; }
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
 
 footer {
   height: 200px;
@@ -588,24 +555,17 @@ footer {
   .navItems > li > a {
     color: #172b4d;
     font-weight: 500;
-<<<<<<< HEAD
     transition: all 0.3s;
   }
 
   .navItems li a:hover {
     font-size: 1.2rem;
     color: #36b37f;
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
   }
 
   .welcomeHeaderContainer {
     /* height: 100vh; */
-<<<<<<< HEAD
-    background-image: url("/images/Header-llustration-desktop.png");
-=======
-    background-image: url("../MicroProfile/images/Header-llustration-desktop.png");
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
+
     background-image: url("../MicroProfile/images/Header-llustration-desktop.png");
 
     /* position: absolute; */
@@ -656,7 +616,6 @@ footer {
   .social-link > ul > li > a {
     font-size: 1.2rem;
     color: #4d4d4d;
-<<<<<<< HEAD
     transition: all 0.3s;
   }
 
@@ -671,8 +630,6 @@ footer {
 
   .social-link > ul > li > a > img:hover {
     transform: scale(1.2);
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
   }
 
   .meduim-logo {
@@ -700,15 +657,13 @@ footer {
     border: 0.08em solid #dfe1e6;
     border-radius: 50%;
     margin: auto;
-<<<<<<< HEAD
+
     transition: all 0.3s;
   }
 
   .bottom:hover {
     background-color: #36b37f;
     color: #fff;
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
   }
 
   .bottom::after {
@@ -728,15 +683,12 @@ footer {
     -moz-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
-<<<<<<< HEAD
     transition: all 0.3s;
   }
 
   .bottom:hover::after {
     border-top: 0.1em solid #fff;
     border-right: 0.1em solid #fff;
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
   }
 
   .projects-container {
@@ -751,19 +703,11 @@ footer {
 
   .about-description {
     height: 50vh;
-<<<<<<< HEAD
-    background-image: url("/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
-      url("/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
-=======
-    background-image:
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
+
+    background-image: url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
- background-image:
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
-       
-background-repeat: no-repeat;
+
+    background-repeat: no-repeat;
     background-position: left calc(70%), right top;
   }
 
@@ -806,21 +750,10 @@ background-repeat: no-repeat;
   }
 
   .container-contact {
-    background-image:
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
+    background-image: url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
       url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
 
-<<<<<<< HEAD
-    background-image: url("/images/Microverse-Student-Project-1 -desktop/Frame.png"),
-      url("/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
-      url("/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
-=======
-    background-image:
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
     background-repeat: no-repeat;
     background-position: right bottom, left center, calc(20%) calc(65%);
     height: 80vh;
@@ -901,13 +834,10 @@ background-repeat: no-repeat;
     margin: 1rem auto 1rem 10px;
   }
 
-<<<<<<< HEAD
   form > .btn:hover {
     background-color: #035231;
   }
 
-=======
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
   .contact-section > .social-link > ul > li {
     padding: 10px;
   }
@@ -922,8 +852,4 @@ background-repeat: no-repeat;
   footer {
     display: none;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> a87368cf1bc412738d9d2d75b5b6fb22bc561859
