@@ -719,6 +719,7 @@ footer {
     color: #42526e;
   }
 
+
   .about-skills-container {
     /* display:grid ;  */
     grid-template-columns: 1fr 1fr 1fr;
@@ -851,4 +852,22 @@ footer {
   footer {
     display: none;
   }
+  /* Accesibility features */
+  .welcome-section > .container > p:hover{
+    font-size: 1.5rem;
+    color: #1045a0;
+    height: 25%;
+  }
+     .about-text:hover{
+      font-size: 2rem;
+    color: #1045a0;   
+  }
+  .skills:hover {
+  background-color: #ebf0ee;
+  height: 120%;
+}
+label{
+  /* visibility: hidden; */
+  display: none;
+}
 }
