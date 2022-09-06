@@ -124,7 +124,7 @@ form > .btn {
 }
 
 .welcome-section {
-  background-image: url("../MicroProfile/images/header-illsutration-mobile.png");
+  background-image: url(images/header-illsutration-mobile.png);
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +193,8 @@ form > .btn {
 
 /* .bottom-arrow{
   display: none;
- } */.bottom-arrow1 {
+ } */
+.bottom-arrow1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,7 +338,7 @@ form > .btn {
 }
 
 .btn:hover {
-  background-color: #035231;
+  background-color: #82f0c2;
 }
 
 .btn:enabled {
@@ -349,7 +350,7 @@ form > .btn {
 }
 
 .project-description > .btn:hover {
-  background-color: #008552;
+  background-color: #82f0c2;
 }
 
 .about-container {
@@ -363,12 +364,7 @@ form > .btn {
 }
 
 .about-description {
-  background-image:
-    url("/images/illustration.png"),
-    url("/images/MaskGroup.png");
-  background-image:
-    url("../MicroProfile/images/illustration.png"),
-    url("../MicroProfile/images/MaskGroup.png");
+  background-image: url(images/illustration.png), url(images/MaskGroup.png);
   background-repeat: no-repeat;
   background-position: left top, right top;
   text-align: center;
@@ -567,13 +563,13 @@ footer {
 
   .navItems li a:hover {
     font-size: 1.2rem;
-    color: #36b37f;
+    color: #82f0c2;
   }
 
   .welcomeHeaderContainer {
     /* height: 100vh; */
 
-    background-image: url("../MicroProfile/images/Header-llustration-desktop.png");
+    background-image: url(images/Header-llustration-desktop.png);
 
     /* position: absolute; */
     background-size: cover;
@@ -703,9 +699,8 @@ footer {
 
   .about-description {
     height: 50vh;
-    background-image:
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-about-me-2-desktop.png"),
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration\ about\ me\ desktop.png");
+    background-image: url(images/Microverse-Student-/illustration-about-me-2-desktop.png),
+      url(images/Microverse-Student-/illustration-about-me-desktop.png);
     background-repeat: no-repeat;
     background-position: left calc(70%), right top;
   }
@@ -718,7 +713,6 @@ footer {
     line-height: 1.5;
     color: #42526e;
   }
-
 
   .about-skills-container {
     /* display:grid ;  */
@@ -750,10 +744,9 @@ footer {
   }
 
   .container-contact {
-    background-image:
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame.png"),
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/Frame-1.png"),
-      url("../MicroProfile/images/Microverse-Student-Project-1 -desktop/illustration-2-contact-form-desktop.png");
+    background-image: url(images/Microverse-Student-/Frame.png),
+      url(images/Microverse-Student-/Frame-1.png),
+      url(images/Microverse-Student-/illustration-2-contact-form-desktop.png);
     background-repeat: no-repeat;
     background-position: right bottom, left center, calc(20%) calc(65%);
     height: 80vh;
@@ -835,13 +828,16 @@ footer {
   }
 
   form > .btn:hover {
-    background-color: #035231;
+    background-color: #82f0c2;
   }
 
   .contact-section > .social-link > ul > li {
     padding: 10px;
   }
-
+   .name-form> [type="text"]:focus {
+    border: 1px solid #36b37e;
+    outline: none;
+  }
   hr {
     display: block;
     color: #dfe1e6;
@@ -853,21 +849,21 @@ footer {
     display: none;
   }
   /* Accesibility features */
-  .welcome-section > .container > p:hover{
+  .welcome-section > .container > p:hover {
     font-size: 1.5rem;
     color: #1045a0;
     height: 25%;
   }
-     .about-text:hover{
-      font-size: 2rem;
-    color: #1045a0;   
+  .about-text:hover {
+    font-size: 2rem;
+    color: #1045a0;
   }
   .skills:hover {
-  background-color: #ebf0ee;
-  height: 120%;
-}
-label{
-  /* visibility: hidden; */
-  display: none;
-}
+    background-color: #ebf0ee;
+    height: 120%;
+  }
+  label {
+    /* visibility: hidden; */
+    display: none;
+  }
 }
