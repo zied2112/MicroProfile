@@ -699,7 +699,8 @@ footer {
 
   .about-description {
     height: 50vh;
-    background-image: url(images/Microverse-Student-/illustration-about-me-2-desktop.png),
+    background-image:
+      url(images/Microverse-Student-/illustration-about-me-2-desktop.png),
       url(images/Microverse-Student-/illustration-about-me-desktop.png);
     background-repeat: no-repeat;
     background-position: left calc(70%), right top;
@@ -744,7 +745,8 @@ footer {
   }
 
   .container-contact {
-    background-image: url(images/Microverse-Student-/Frame.png),
+    background-image:
+      url(images/Microverse-Student-/Frame.png),
       url(images/Microverse-Student-/Frame-1.png),
       url(images/Microverse-Student-/illustration-2-contact-form-desktop.png);
     background-repeat: no-repeat;
@@ -834,10 +836,12 @@ footer {
   .contact-section > .social-link > ul > li {
     padding: 10px;
   }
-   .name-form> [type="text"]:focus {
+
+  .name-form > [type="text"]:focus {
     border: 1px solid #36b37e;
     outline: none;
   }
+
   hr {
     display: block;
     color: #dfe1e6;
@@ -848,20 +852,24 @@ footer {
   footer {
     display: none;
   }
+
   /* Accesibility features */
   .welcome-section > .container > p:hover {
     font-size: 1.5rem;
     color: #1045a0;
     height: 25%;
   }
+
   .about-text:hover {
     font-size: 2rem;
     color: #1045a0;
   }
+
   .skills:hover {
     background-color: #ebf0ee;
     height: 120%;
   }
+
   label {
     /* visibility: hidden; */
     display: none;
