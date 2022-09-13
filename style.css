@@ -83,12 +83,15 @@ ul {
     transform: rotate(360deg);
   }
 }
-.menu-show{
+
+.menu-show {
   /* display: none; */
-    display: flex;
+  display: flex;
   flex-direction: column;
+
   /* justify-content: center; */
   padding: 15vh;
+
   /* align-items: center; */
   background: white;
   width: 100%;
@@ -99,34 +102,40 @@ ul {
   left: 0;
   z-index: 1;
 }
-.menu-show > li{
+
+.menu-show > li {
   padding: 1vh;
 }
+
 .menu-show > li > a {
   text-decoration: none;
   margin: 10px;
+
   /* font-family: 'Inter'; */
   font-style: normal;
   font-weight: bolder;
   font-size: 32px;
   line-height: 44px;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .logo-welcome {
   animation-name: rotate;
   animation-duration: 2s;
 }
-.close-btn{
+
+.close-btn {
   display: none;
   position: absolute;
   right: 32px;
   font-size: 1.5rem;
   font-weight: 300;
   color: #67798e;
+
   /* margin-right: 38px; */
   z-index: 6;
 }
+
 .hamburger-menu {
   color: black;
   font-size: 1.2rem;
@@ -534,10 +543,11 @@ footer {
   text-align: center;
 }
 
-  label {
-    /* visibility: hidden; */
-    display: none;
-  }
+label {
+  /* visibility: hidden; */
+  display: none;
+}
+
 @media screen and (min-device-width: 768px) {
   header {
     justify-content: center;
@@ -666,13 +676,10 @@ footer {
   .social-link > ul > li > a > img {
     transition: all 0.3s;
   }
-    .social-link > ul > li > a > img:hover {
-    transform: scale(1.2);
-    filter: invert(59%) sepia(39%) saturate(636%) hue-rotate(103deg) brightness(93%) contrast(92%);
-  }
 
   .social-link > ul > li > a > img:hover {
     transform: scale(1.2);
+    filter: invert(59%) sepia(39%) saturate(636%) hue-rotate(103deg) brightness(93%) contrast(92%);
   }
 
   .meduim-logo {

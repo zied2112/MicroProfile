@@ -1,18 +1,16 @@
-var menuBtn = document.getElementById('menu-btn');
-var closeBtn = document.getElementById('close-btn');
-var menu = document.getElementById('menu');
-menuBtn.addEventListener('click', function () {
-    // console.log('Clicked');
-    menu.classList.add('menu-show');
-    closeBtn.style.display = 'block';
-}
-); 
-closeBtn.addEventListener('click', function () {
-    menu.classList.remove('menu-show');
-    closeBtn.style.display = 'none';
-}
-); 
-menu.addEventListener('click', function () { 
-    menu.classList.remove('menu-show');
-    closeBtn.style.display = 'none';
- });
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const menu = document.getElementById('menu');
+menuBtn.addEventListener('click', () => {
+  // console.log('Clicked');
+  menu.classList.add('menu-show');
+  closeBtn.style.display = 'block';
+});
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove('menu-show');
+  closeBtn.style.display = 'none';
+});
+menu.addEventListener('click', () => {
+  menu.classList.remove('menu-show');
+  closeBtn.style.display = 'none';
+});
