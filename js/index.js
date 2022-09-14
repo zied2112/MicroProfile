@@ -7,7 +7,6 @@ const projectContainer = document.getElementById('projects-container');
 
 const popup = document.getElementById('popup');
 menuBtn.addEventListener('click', () => {
-  // console.log('Clicked');
   menu.classList.add('menu-show');
   closeBtn.style.display = 'block';
 });
@@ -66,7 +65,7 @@ data.forEach((data) => {
         <div class="popup-project-buttons">
         <a href="${
   data.live
-}" target="_blank"><button class="popup-project-btn">
+}" target="_blank"><button class="popup-project-btn " id="popup-globe-btn">
         See Live<i class="fa-solid fa-globe"></i>
         </button></a>
         <a href="${
