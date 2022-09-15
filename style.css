@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 /* General page style */
 * {
@@ -21,10 +22,6 @@ header {
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
-
-  /* background-color: #fff; */
-
-  /* opacity: 0.9; */
 }
 
 nav {
@@ -61,7 +58,7 @@ ul {
 }
 
 .project-description > ul {
-  padding: 10px;
+  padding: 5px 10px;
   margin: auto;
   width: 100%;
   display: flex;
@@ -85,14 +82,9 @@ ul {
 }
 
 .menu-show {
-  /* display: none; */
   display: flex;
   flex-direction: column;
-
-  /* justify-content: center; */
   padding: 15vh;
-
-  /* align-items: center; */
   background: white;
   width: 100%;
   height: 100%;
@@ -110,8 +102,6 @@ ul {
 .menu-show > li > a {
   text-decoration: none;
   margin: 10px;
-
-  /* font-family: 'Inter'; */
   font-style: normal;
   font-weight: bolder;
   font-size: 32px;
@@ -200,13 +190,14 @@ form > .btn {
   text-align: center;
   letter-spacing: 1px;
   font-weight: 900;
+  line-height: 52px;
   color: #32b37e;
 }
 
 .welcome-section > .container > p {
   line-height: 1.6;
   width: 80%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   height: 30%;
   margin-top: 20px;
   text-align: center;
@@ -223,7 +214,7 @@ form > .btn {
 }
 
 .welcome-section > .container > .social-link {
-  margin-top: 7vh;
+  margin-top: 3vh;
   width: 50%;
 }
 
@@ -238,9 +229,6 @@ form > .btn {
   color: #4d4d4d;
 }
 
-/* .bottom-arrow{
-  display: none;
- } */
 .bottom-arrow1 {
   display: flex;
   justify-content: center;
@@ -263,8 +251,6 @@ form > .btn {
   top: 5px;
   content: "";
   display: inline-block;
-
-  /* margin-top: 0.6em; */
   width: 25%;
   height: 25%;
   border-top: 0.1em solid #333;
@@ -301,9 +287,9 @@ form > .btn {
 
 .project {
   background-color: #ebf0ee;
-  width: 90%;
+  width: 90vw;
   margin: 2vh auto;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   border: 1px solid #d0d9d4;
@@ -312,10 +298,16 @@ form > .btn {
 .project-image {
   overflow: hidden;
   width: 100%;
-  height: 300px;
-  border-radius: 5px;
+  height: 30vh;
+  border-radius: 8px;
   background-size: auto;
   background-position: center;
+}
+
+.project-image > img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
 }
 
 .project-description {
@@ -327,6 +319,7 @@ form > .btn {
 }
 
 .project-description > h3 {
+  width: 90%;
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 1px;
@@ -339,7 +332,7 @@ form > .btn {
   font-size: 12px;
   font-weight: 500;
   margin: 5px 0;
-  padding: 10px;
+  padding: 15px;
   background-color: #ebf0ee;
   border-radius: 5px;
   transition: all 0.3s;
@@ -362,6 +355,7 @@ form > .btn {
 }
 
 .project-description > .btn {
+  border: none;
   border-radius: 5px;
   font-size: 1.3rem;
   text-align: center;
@@ -371,6 +365,110 @@ form > .btn {
   color: white;
   margin: 15px 0 25px 0;
   transition: all 0.3s;
+}
+
+/* Popup window Project */
+.popup-project {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #c1c7d0;
+  width: 100%;
+  min-height: 882px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.popup-project-container {
+  border-radius: 16px;
+  width: 90%;
+  padding: 16px;
+  height: 92%;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.popup-close-button {
+  position: relative;
+  color: white;
+  background: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #32b37e;
+  border: none;
+  font-size: 1.5rem;
+  top: -190px;
+  right: -70vw;
+}
+
+.popup-project-title {
+  margin-top: -30px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.popup-project-container > .popup-project-header > ul > li {
+  max-height: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px 5px;
+  padding: 10px;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.popup-project-image {
+  width: 100%;
+  height: 200px;
+}
+
+.popup-project-description {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  max-height: 313px;
+  overflow: auto;
+}
+
+.popup-img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-project-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.popup-project-btn {
+  width: 100%;
+  max-height: 48px;
+  margin-top: 10px;
+  font-size: 17px;
+  padding: 12px 16px;
+  background: #36b37f;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+#popup-globe-btn {
+  margin-right: 10px;
+}
+
+.popup-project-btn > i {
+  padding-left: 10px;
 }
 
 .about-description > .btn {
@@ -385,7 +483,7 @@ form > .btn {
 }
 
 .btn:hover {
-  background-color: #82f0c2;
+  background-color: #29d48d;
 }
 
 .btn:enabled {
@@ -394,10 +492,6 @@ form > .btn {
 
 .btn:active {
   background-color: #008552;
-}
-
-.project-description > .btn:hover {
-  background-color: #82f0c2;
 }
 
 .about-container {
@@ -433,7 +527,6 @@ form > .btn {
 }
 
 .about-text {
-  /* height: 25vh; */
   line-height: 28px;
   font-size: 1rem;
   text-align: center;
@@ -447,9 +540,6 @@ form > .btn {
 
 .about-skills-container {
   display: inline-grid;
-
-  /* justify-items: center; */
-
   column-gap: 10px;
 }
 
@@ -538,13 +628,11 @@ hr {
 }
 
 footer {
-  height: 200px;
-  margin-top: 15rem;
+  height: 100px;
   text-align: center;
 }
 
 label {
-  /* visibility: hidden; */
   display: none;
 }
 
@@ -552,8 +640,6 @@ label {
   header {
     justify-content: center;
     align-items: center;
-
-    /* background-color: white; */
   }
 
   .contact-section > .social-link {
@@ -619,11 +705,7 @@ label {
   }
 
   .welcomeHeaderContainer {
-    /* height: 100vh; */
-
     background-image: url(images/Header-llustration-desktop.png);
-
-    /* position: absolute; */
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
@@ -661,6 +743,7 @@ label {
   .welcome-section > .container > p {
     text-justify: distribute-all-lines;
     height: 15%;
+    font-size: 1.1rem;
   }
 
   .welcome-section > .container > .social-link {
@@ -679,7 +762,9 @@ label {
 
   .social-link > ul > li > a > img:hover {
     transform: scale(1.2);
-    filter: invert(59%) sepia(39%) saturate(636%) hue-rotate(103deg) brightness(93%) contrast(92%);
+    filter:
+      invert(59%) sepia(39%) saturate(636%) hue-rotate(103deg)
+      brightness(93%) contrast(92%);
   }
 
   .meduim-logo {
@@ -692,7 +777,6 @@ label {
   }
 
   .bottom-arrow {
-    /* display: visible; */
     position: absolute;
     top: 75vh;
     left: 49%;
@@ -722,8 +806,6 @@ label {
     text-align: center;
     content: "";
     display: inline-block;
-
-    /* margin-top: 0.6em; */
     width: 25%;
     height: 25%;
     border-top: 0.1em solid #333;
@@ -738,6 +820,10 @@ label {
   .bottom:hover::after {
     border-top: 0.1em solid #fff;
     border-right: 0.1em solid #fff;
+  }
+
+  .project {
+    width: 100%;
   }
 
   .projects-container {
@@ -769,10 +855,7 @@ label {
   }
 
   .about-skills-container {
-    /* display:grid ;  */
     grid-template-columns: 1fr 1fr 1fr;
-
-    /* width: 90%; */
     margin: auto;
     gap: 20px;
     padding: 10vh;
@@ -791,8 +874,6 @@ label {
 
   .contact-section {
     margin: 5vh 0 0 0;
-
-    /* width: 100vw; */
     height: 87vh;
     overflow-y: hidden;
   }
@@ -822,14 +903,7 @@ label {
   }
 
   .container-contact > .container-contact2 > h2 {
-    /* border: #008552 solid 1px; */
-
-    /* padding: 5rem 4rem; */
-
-    /* padding: 6rem 3rem 0 3rem; */
     padding: 3rem 2rem;
-
-    /* height: 30vh; */
     font-size: 1.7rem;
     text-align: justify;
     justify-content: baseline;
@@ -839,12 +913,7 @@ label {
   }
 
   form {
-    /* width: 40vw; */
-
-    /* float: left; */
     justify-content: start;
-
-    /* width: 40 */
   }
 
   .name-form {
@@ -873,12 +942,9 @@ label {
   #lastName {
     margin: 10px 0 10px 10px;
     padding: 15px 25px 15px 15px;
-
-    /* width: 150%; */
   }
 
   form > .btn {
-    /* margin: 1rem auto; */
     margin: 1rem auto 1rem 10px;
   }
 
@@ -924,7 +990,98 @@ label {
   }
 
   label {
-    /* visibility: hidden; */
     display: none;
+  }
+
+  /* Popup window Project Desktop */
+  .popup-project {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #c1c7d0;
+    width: 100%;
+    height: 1083px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  .popup-project-container {
+    border-radius: 16px;
+    width: 50%;
+    padding: 16px;
+    overflow: hidden;
+    height: 75%;
+    align-items: center;
+    background-color: white;
+  }
+
+  .popup-close-button {
+    position: relative;
+    top: -58.5vh;
+    left: 45vw;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #ebecf0;
+    font-size: 1.5rem;
+  }
+
+  .popup-project-header {
+    width: 100%;
+  }
+
+  .popup-project-image {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .popup-project-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    width: 60%;
+  }
+
+  .popup-project-buttons {
+    justify-content: center;
+    position: absolute;
+    top: 80vh;
+    left: 15vw;
+  }
+
+  .popup-project-btn {
+    max-height: 48px;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  #popup-globe-btn {
+    width: 115px;
+  }
+
+  .popup-project-container > .popup-project-header > ul > li {
+    margin-bottom: 30px;
+  }
+
+  .popup-project-description {
+    height: 180px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .popup-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup-project-btn > i {
+    padding-left: 10px;
   }
 }
