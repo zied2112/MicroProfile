@@ -105,3 +105,22 @@ form1.addEventListener('submit', (e) => {
     messageContainer.replaceChildren(message);
   }
 });
+const form2 = document.querySelector('#form2');
+const messageContainer2 = document.querySelector('.message2');
+
+form2.addEventListener('submit', (e) => {
+  const formData = new FormData(e.target);
+  const valid = isValidEmail(formData.get('email'));
+  if (valid) {
+    const message = document.createElement('span');
+    message.classList.add('success');
+    message.innerHTML = 'Data sent successfully!';
+    messageContainer2.replaceChildren(message);
+  } else {
+    e.preventDefault();
+    const message = document.createElement('span');
+    message.classList.add('error');
+    message.innerHTML = 'Incorrect format. Enter email in lowercase';
+    messageContainer2.replaceChildren(message);
+  }
+});
