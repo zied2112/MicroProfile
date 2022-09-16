@@ -106,6 +106,7 @@ form1.addEventListener('submit', (e) => {
   }
 });
 
+
 // Mobile form Local Storage
 const name = form2.elements.item(0);
 const email = form2.elements.item(1);
@@ -194,3 +195,4 @@ comment1.addEventListener('change', (e) => {
   formObject1.comment1 = e.target.value;
   localStorage.setItem('data1', JSON.stringify(formObject1));
 });
+
