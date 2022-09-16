@@ -83,6 +83,7 @@ data.forEach((data) => {
 
 const form1 = document.querySelector('#form1');
 const messageContainer = document.querySelector('.message1');
+const form2 = document.querySelector("#form2");
 
 const isValidEmail = (email) => {
   const eamilPattern = /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
