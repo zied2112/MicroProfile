@@ -41,7 +41,7 @@ data.forEach((data) => {
   const projectBtn = project.querySelector('.project-btn');
   projectBtn.addEventListener('click', () => {
     document.getElementById('popup').scrollIntoView();
-    projectContainer.style.display = 'none';
+    // projectContainer.style.display = 'none';
     popup.style.display = 'flex';
     const y = popup.getBoundingClientRect().top + window.scrollY;
     window.scroll({
@@ -50,8 +50,7 @@ data.forEach((data) => {
     });
     popup.innerHTML += `<div class="popup-project-container">
     <div class="popup-project-header">
-    <div class="popup-project-image"><img src="${
-  data.src
+    <div class="popup-project-image"><img src="${data.src
 }" class="popup-img" alt="projectimage"></div>
     <button class="popup-close-button">
     <i class="fa-solid fa-xmark"></i>
@@ -63,13 +62,11 @@ data.forEach((data) => {
         </div>
         <div class="popup-project-description">${data.description}</div>
         <div class="popup-project-buttons">
-        <a href="${
-  data.live
+        <a href="${data.live
 }" target="_blank"><button class="popup-project-btn " id="popup-globe-btn">
         See Live<i class="fa-solid fa-globe"></i>
         </button></a>
-        <a href="${
-  data.source
+        <a href="${data.source
 }" target="_blank"><button class="popup-project-btn">
         See Source<i class="fa-brands fa-github"></i>
         </button></a>
@@ -82,4 +79,48 @@ data.forEach((data) => {
       projectContainer.style.display = 'grid';
     });
   });
+});
+
+const form1 = document.querySelector('#form1');
+const messageContainer = document.querySelector('.message1');
+
+const isValidEmail = (email) => {
+  const eamilPattern = /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  return eamilPattern.test(email);
+};
+
+form1.addEventListener('submit', (e) => {
+  const formData = new FormData(e.target);
+  const valid = isValidEmail(formData.get('email'));
+  if (valid) {
+    const message = document.createElement('span');
+    message.classList.add('success');
+    message.innerHTML = 'Data sent successfully!';
+    messageContainer.replaceChildren(message);
+  } else {
+    e.preventDefault();
+    const message = document.createElement('span');
+    message.classList.add('error');
+    message.innerHTML = 'Incorrect format. Enter email in lowercase';
+    messageContainer.replaceChildren(message);
+  }
+});
+const form2 = document.querySelector('#form2');
+const messageContainer2 = document.querySelector('.message2');
+
+form2.addEventListener('submit', (e) => {
+  const formData = new FormData(e.target);
+  const valid = isValidEmail(formData.get('email'));
+  if (valid) {
+    const message = document.createElement('span');
+    message.classList.add('success');
+    message.innerHTML = 'Data sent successfully!';
+    messageContainer2.replaceChildren(message);
+  } else {
+    e.preventDefault();
+    const message = document.createElement('span');
+    message.classList.add('error');
+    message.innerHTML = 'Incorrect format. Enter email in lowercase';
+    messageContainer2.replaceChildren(message);
+  }
 });
