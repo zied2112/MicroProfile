@@ -175,4 +175,22 @@ if (!formObject1) {
 
 firstName.value = formObject1.firstName;
 firstName.addEventListener('change', (e) => {
-  formObject1.fir…
+  formObject1.firstName = e.target.value;
+  localStorage.setItem('data1', JSON.stringify(formObject1));
+});
+lastName.value = formObject1.lastName;
+lastName.addEventListener('change', (e) => {
+  formObject1.lastName = e.target.value;
+  localStorage.setItem('data1', JSON.stringify(formObject1));
+});
+email1.value = formObject1.email1;
+email1.addEventListener('change', (e) => {
+  formObject1.email1 = e.target.value;
+  localStorage.setItem('data1', JSON.stringify(formObject1));
+});
+
+comment1.value = formObject1.comment1;
+comment1.addEventListener('change', (e) => {
+  formObject1.comment1 = e.target.value;
+  localStorage.setItem('data1', JSON.stringify(formObject1));
+});
