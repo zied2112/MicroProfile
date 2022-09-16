@@ -146,3 +146,33 @@ comment.addEventListener('change', (e) => {
   formObject.comment = e.target.value;
   localStorage.setItem('data', JSON.stringify(formObject));
 });
+
+// Desktop form Local Storage
+const firstName = form1.elements.item(0);
+const lastName = form1.elements.item(1);
+const email1 = form1.elements.item(2);
+const comment1 = form1.elements.item(3);
+function saveData1() {
+  const data1 = {
+    firstName: form1.elements.item(0).value,
+    lastName: form1.elements.item(1).value,
+    Email: form1.elements.item(2).value,
+    Comment: form1.elements.item(3).value,
+  };
+  localStorage.setItem('data1', JSON.stringify(data1));
+}
+
+let formObject1 = JSON.parse(localStorage.getItem('data1'));
+if (!formObject1) {
+  formObject1 = {
+    firstName: '',
+    lastName: '',
+    email1: '',
+    comment1: '',
+  };
+  saveData1();
+}
+
+firstName.value = formObject1.firstName;
+firstName.addEventListener('change', (e) => {
+  formObject1.fir…
