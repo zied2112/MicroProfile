@@ -16,9 +16,13 @@ a {
 
 /* navbar Style */
 header {
+  z-index: 1;
+  position: fixed;
   align-items: center;
   height: 10vh;
   display: flex;
+  width: 100%;
+  background-color: rgba(191, 194, 198, 0.413);
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
@@ -87,12 +91,12 @@ ul {
   padding: 15vh;
   background: white;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  z-index: 999;
   position: absolute;
   padding-left: 10vw;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 .menu-show > li {
@@ -369,12 +373,12 @@ form > .btn {
 
 /* Popup window Project */
 .popup-project {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: #c1c7d0;
-  width: 100%;
-  min-height: 882px;
+  background-color: rgb(193, 199, 208, 0.3);
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,7 +389,7 @@ form > .btn {
   border-radius: 16px;
   width: 90%;
   padding: 16px;
-  height: 92%;
+  max-height: 95vh;
   flex-direction: column;
   align-items: center;
   background-color: white;
@@ -407,7 +411,8 @@ form > .btn {
 .popup-project-title {
   margin-top: -30px;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 25px;
+  padding-right: 20px;
   line-height: 44px;
   color: #172b4d;
 }
@@ -417,7 +422,7 @@ form > .btn {
   font-size: 12px;
   font-weight: 500;
   margin: 5px 5px;
-  padding: 10px;
+  padding: 8px;
   background-color: #ebf0ee;
   border-radius: 5px;
   transition: all 0.3s;
@@ -431,8 +436,8 @@ form > .btn {
 .popup-project-description {
   margin-top: 10px;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 18px;
   color: #344563;
   max-height: 313px;
   overflow: auto;
@@ -577,7 +582,7 @@ form > .btn {
 }
 
 .contact-section {
-  height: 100vh;
+  height: 125vh;
   margin: 3rem 24px;
 }
 
@@ -592,11 +597,19 @@ form > .btn {
   justify-content: center;
 }
 
+.form1 {
+  display: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   width: 100%;
+}
+
+.message2 {
+  z-index: 99;
 }
 
 form > input[type="text"],
@@ -621,6 +634,22 @@ form > textarea:focus {
 
 .name-form {
   display: none;
+}
+
+.success {
+  font-size: 1em;
+  color: #06d206;
+  font-family: monospace;
+  letter-spacing: 3.5px;
+  font-weight: bolder;
+}
+
+.error {
+  font-size: 1em;
+  color: #d83030;
+  font-family: monospace;
+  letter-spacing: 3px;
+  font-weight: bolder;
 }
 
 hr {
@@ -912,8 +941,13 @@ label {
     color: #172b4d;
   }
 
-  form {
+  .form2 {
+    display: none;
+  }
+
+  .form1 {
     justify-content: start;
+    display: flex;
   }
 
   .name-form {
@@ -924,12 +958,12 @@ label {
   }
 
   #name {
-    display: none;
+    display: hidden;
   }
 
-  form > .name-form > input[type="text"],
-  form > input[type="email"],
-  form > textarea {
+  .form1 > .name-form > input[type="text"],
+  .form1 > input[type="email"],
+  .form1 > textarea {
     width: 100%;
     padding: 15px;
     border: 1px solid #e0e0e0;
@@ -956,7 +990,7 @@ label {
     padding: 10px;
   }
 
-  .name-form > [type="text"]:focus {
+  .form1 > .name-form > [type="text"]:focus {
     border: 1px solid #36b37e;
     outline: none;
   }
@@ -995,12 +1029,12 @@ label {
 
   /* Popup window Project Desktop */
   .popup-project {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #c1c7d0;
+    background-color: rgb(193, 199, 208, 0.8);
     width: 100%;
-    height: 1083px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1009,7 +1043,7 @@ label {
 
   .popup-project-container {
     border-radius: 16px;
-    width: 50%;
+    max-width: 50%;
     padding: 16px;
     overflow: hidden;
     height: 75%;
@@ -1019,7 +1053,7 @@ label {
 
   .popup-close-button {
     position: relative;
-    top: -58.5vh;
+    top: -49.5vh;
     left: 45vw;
     color: black;
     padding: 5px 10px;
@@ -1035,7 +1069,7 @@ label {
   .popup-project-image {
     margin-top: 50px;
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 
   .popup-project-title {
@@ -1049,7 +1083,7 @@ label {
   .popup-project-buttons {
     justify-content: center;
     position: absolute;
-    top: 80vh;
+    top: 54vh;
     left: 15vw;
   }
 
@@ -1065,7 +1099,7 @@ label {
   }
 
   .popup-project-container > .popup-project-header > ul > li {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .popup-project-description {
