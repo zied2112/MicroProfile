@@ -105,3 +105,44 @@ form1.addEventListener('submit', (e) => {
     messageContainer.replaceChildren(message);
   }
 });
+
+// Mobile form Local Storage
+const name = form2.elements.item(0);
+const email = form2.elements.item(1);
+const comment = form2.elements.item(2);
+function saveData() {
+  const data = {
+    Name: form2.elements.item(0).value,
+    Email: form2.elements.item(1).value,
+    Comment: form2.elements.item(2).value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+}
+
+let formObject = JSON.parse(localStorage.getItem('data'));
+if (!formObject) {
+  formObject = {
+    name: '',
+    email: '',
+    comment: '',
+  };
+  saveData();
+}
+
+name.value = formObject.name;
+name.addEventListener('change', (e) => {
+  formObject.name = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
+
+email.value = formObject.email;
+email.addEventListener('change', (e) => {
+  formObject.email = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
+
+comment.value = formObject.comment;
+comment.addEventListener('change', (e) => {
+  formObject.comment = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
