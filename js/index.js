@@ -83,7 +83,7 @@ data.forEach((data) => {
 
 const form1 = document.querySelector('#form1');
 const messageContainer = document.querySelector('.message1');
-const form2 = document.querySelector("#form2");
+const form2 = document.querySelector('#form2');
 
 const isValidEmail = (email) => {
   const eamilPattern = /^(([^<>()[\]\\.,;:\s@"A-Z]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
@@ -106,7 +106,6 @@ form1.addEventListener('submit', (e) => {
     messageContainer.replaceChildren(message);
   }
 });
-
 
 // Mobile form Local Storage
 const name = form2.elements.item(0);
@@ -196,4 +195,3 @@ comment1.addEventListener('change', (e) => {
   formObject1.comment1 = e.target.value;
   localStorage.setItem('data1', JSON.stringify(formObject1));
 });
-
